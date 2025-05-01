@@ -9,20 +9,20 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { WeatherOrmEntity } from './entities/weather.orm.entity';
 
 @Module({
-  imports: [
-    HttpModule.register({
-      timeout: config.axios.timeout,
-      maxRedirects: config.axios.maxRedirects,
-    }),
-    TypeOrmModule.forFeature([WeatherOrmEntity]),
-  ],
-  controllers: [WeatherController],
-  providers: [
-    WeatherService,
-    {
-      provide: WEATHER_REPOSITORY,
-      useClass: WeatherRepository,
-    },
-  ],
+	imports: [
+		HttpModule.register({
+			timeout: config.axios.timeout,
+			maxRedirects: config.axios.maxRedirects
+		}),
+		TypeOrmModule.forFeature([WeatherOrmEntity])
+	],
+	controllers: [WeatherController],
+	providers: [
+		WeatherService,
+		{
+			provide: WEATHER_REPOSITORY,
+			useClass: WeatherRepository
+		}
+	]
 })
 export class WeatherModule {}

@@ -18,15 +18,15 @@ export class TransformInterceptor implements NestInterceptor<any, ResponseData> 
 	intercept(context: ExecutionContext, next: CallHandler): Observable<ResponseData> {
 		return next.handle().pipe(
 			map((entity) => ({
-                sunrise: entity.sunrise,
-                sunset: entity.sunset,
-                temp: entity.temp,
-                feels_like: entity.feels_like,
-                pressure: entity.pressure,
-                humidity: entity.humidity,
-                uvi: entity.uvi,
-                wind_speed: entity.wind_speed,
-              })),
+				sunrise: entity.sunrise,
+				sunset: entity.sunset,
+				temp: entity.temp,
+				feels_like: entity.feels_like,
+				pressure: entity.pressure,
+				humidity: entity.humidity,
+				uvi: entity.uvi,
+				wind_speed: entity.wind_speed
+			}))
 		);
 	}
 }

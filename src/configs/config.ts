@@ -18,11 +18,11 @@ export const config = {
 		user: requireEnv('DB_USER'),
 		password: requireEnv('DB_PASSWORD'),
 		database: requireEnv('DB_DATABASE'),
-        synchronize: true,
+		synchronize: true
 	},
 
-    axios: {
-        timeout: 1500,
-        maxRedirects: 1,
-    }
+	axios: {
+		timeout: 1500,
+		maxRedirects: 1
+	}
 };

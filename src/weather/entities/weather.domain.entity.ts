@@ -1,7 +1,7 @@
 export class Weather {
 	constructor(
-    public readonly weatherId: string,
-    public readonly lat: number,
+		public readonly weatherId: string,
+		public readonly lat: number,
 		public readonly lon: number,
 		public readonly part: string,
 		public readonly sunrise: number,
