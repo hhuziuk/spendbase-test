@@ -1,0 +1,36 @@
+{
+	"name": "spendbase-test",
+	"version": "1.0.0",
+	"description": "test task for SpendBase",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm run build && node dist/index.js",
+		"build": "nest build",
+		"lint": "npx biome format . --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hhuziuk/spendbase-test.git"
+	},
+	"author": "Heorhii Huziuk",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hhuziuk/spendbase-test/issues"
+	},
+	"homepage": "https://github.com/hhuziuk/spendbase-test#readme",
+	"dependencies": {
+		"@nestjs/axios": "^4.0.0",
+		"@nestjs/core": "^11.1.0",
+		"@nestjs/platform-express": "^11.1.0",
+		"@nestjs/testing": "^11.1.0",
+		"@nestjs/typeorm": "^11.0.0",
+		"axios": "^1.9.0",
+		"dotenv": "^16.5.0",
+		"pg": "^8.15.6",
+		"typeorm": "^0.3.22"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.15.3"
+	}
+}

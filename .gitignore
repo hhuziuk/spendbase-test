@@ -1,0 +1,12 @@
+# MacOS Data
+**/.DS_Store
+
+# Dependency directory
+node_modules/
+
+.vscode-test
+.vscode
+
+dist
+
+.env
