@@ -1,3 +1,4 @@
+
 export class CreateWeatherDto {
 	lat!: number;
 	lon!: number;
