@@ -84,7 +84,7 @@ export class WeatherService {
 			feels_like: current.feels_like,
 			pressure: current.pressure,
 			humidity: current.humidity,
-			uvi: current.uvi, // i have problem, because there is no "uvi" param in openweatherMap response
+			uvi: current.uvi,
 			wind_speed: current.wind_speed
 		};
 	}
